@@ -1,0 +1,73 @@
+
+.mean a{
+	background-color: white;
+	padding: 5px;
+	float: left;
+	width:25%;
+	font-size:25px;
+	text-align: center;
+	margin:auto;
+}
+h1{
+	text-align:center;
+	color: #990033;
+}
+h3{
+	font-size:25px;
+	text-align:center;
+	clear: both;
+	margin:0;
+	padding-top: 30px;
+}
+.box img{
+	max-height: 150px;
+	max-width:300px;
+	padding: 5px;
+}
+#name{
+	border: 1px;
+	border-color: blue;
+}
+#anh img{
+	max-width:100%;
+}
+.chair a{
+	float:left;
+	width:33.33333%;
+	padding: 30px;
+	border:1px solid white;
+	text-align:center;
+
+}
+a:hover{
+	color:green;
+}
+.shelf a{
+	float: left;
+	width: 33.333333%;
+	padding: 30px;
+	border:1px solid yellow;
+	text-align: center;
+}
+.bed a{
+	float: left;
+	width: 33.333333%;
+	border:1px solid black;
+	padding: 30px;
+	text-align: center;
+}
+
+.laugh{
+	clear:both;
+}
+
+.laugh p{
+	text-align: center;
+}
+.laugh img{
+	max-width:100%;
+	display:block;
+	margin:auto;
+    padding: 20px;
+    padding-bottom: 0;
+}
