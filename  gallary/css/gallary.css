@@ -1,12 +1,18 @@
 
 .mean a{
-	background-color: white;
-	padding: 5px;
-	float: left;
-	width:25%;
-	font-size:25px;
+	padding: 35px;
+	font-size:20px;
+	text-decoration: none;
+	width:20%;
+	
+}
+.mean{
+	padding: 15px;
+	border-bottom:1px solid white;
 	text-align: center;
-	margin:auto;
+	background-color: white;
+	position: relative;
+	clear: both;
 }
 h1{
 	text-align:center;
@@ -37,7 +43,6 @@ h3{
 	padding: 30px;
 	border:1px solid white;
 	text-align:center;
-
 }
 a:hover{
 	color:green;
@@ -70,4 +75,23 @@ a:hover{
 	margin:auto;
     padding: 20px;
     padding-bottom: 0;
+}
+.mean img{
+	border:1px solid black;
+	border-radius:50%;
+	position: absolute;
+    max-width: 200px;
+    left: 50px;
+    bottom: 31px;
+}
+#content img{
+	position: fixed;
+    bottom: 30px;
+    right: 30px;
+	width: 50px;
+	height: 50px;
+}
+.box a{
+	display: block;
+	text-decoration: none;
 }
