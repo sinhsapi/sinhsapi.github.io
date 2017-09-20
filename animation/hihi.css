@@ -1,0 +1,26 @@
+body{
+	background-color: #FFCC00;
+	margin:0;
+	padding: 0;
+}
+*{
+	box-sizing: border-box;
+}
+
+.ablum{
+	max-width:1000px;
+	margin:auto;
+}	
+.banner img{
+	max-width: 100%;
+	margin: auto;
+}
+#creat{
+	font-size: 45px;
+	text-align:center;
+	color:#2196F3 ;
+	clear: both;
+	padding: 10px;
+	animation:title 4s infinite;
+	width:1000px;
+}
