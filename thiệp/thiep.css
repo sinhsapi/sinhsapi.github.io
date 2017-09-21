@@ -1,0 +1,68 @@
+
+.banner{
+	max-width:1000px;
+	margin: auto;
+	width: 300px;
+}	
+.banner img{
+	width:100%;
+	border-radius: 50%;
+	border: 1px solid green;
+}
+
+h1{
+	color: #FF6600;
+	text-align: center;
+	animation: title 4s infinite;
+	padding: 5px;
+}
+.noidung1{
+	float: left;
+	width: 33.33333%;
+	text-align: center;
+}
+.noidung2{
+	float: left;
+	width: 33.33333%;
+	text-align: center;
+}
+.tab{
+	border-radius:5px;
+	margin:auto;
+	text-align: center;
+	float: left;
+	width: 33.33333%;
+}
+.tab img{
+		    width: 300px;
+    border-radius: 10px;
+}
+h3{
+	color: white;
+}
+p{
+	color:#CC99CC;
+	font-size:20px;
+}
+.noidung1 img{
+		width:200px;
+		height:200px;
+		border-radius:10px;
+}
+.noidung2 img{
+		width:200px;
+		height:200px;
+		border-radius:10px;
+}
+.anh{
+	overflow: hidden;
+}
+.anh img{
+	opacity:1;
+	transition:opacity 0.5s linear;
+}
+  
+.anh:hover img {
+
+	        opacity: 0.1;
+}
