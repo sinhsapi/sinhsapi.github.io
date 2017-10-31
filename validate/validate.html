@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="validate.css">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+
+</head>
+<body>
+	<h1>Đăng kí tài khoản</h1>
+	<div class="k">
+		<form action="validate1.html" id="chex">
+			<div class="m">		
+					<p>Facebook</p> <input  id="ten" type="text" name="hoten" placeholder="Facebook" value=""><span></span>
+
+					<p>Gmail</p><input id="mail" type="email" name="gmail" placeholder="Gmail" value=''><span></span>
+						<p>Số điện thoại</p><input id="e10" type="number" name="std" placeholder="Số điện thoại" value=""><span></span>
+					<br/>
+					<br/>
+
+					<p>Tài khoản</p><input id="tc" type="text" name="taikhoan" placeholder="Tài khoản " value="" ><span></span><br/>
+					<br/>
+					<p>Mật khẩu</p><input id="mk" type="password" name="pass" placeholder="Mật khẩu" value="" >
+					<span></span>
+					<br/>
+					<br/>
+					<p>Nhập lại mật khẩu</p><input id="nmk" type="password" name="password" placeholder="Nhập lại mật khẩu" value="" ><span></span>
+					<br/>
+					<br/>
+
+					<p>Địa chỉ</p>
+					<input  id="cc" type="text" name="dc" placeholder="Địa chỉ" value=""><span></span>
+					<br/>
+					<br/>
+			</div>
+			<div>
+				<select id="as" name="ngay" value="">
+
+				</select>
+				<select id="2" name="thang">
+
+				</select>
+				<select id="3" name="năm">
+
+				</select>
+				<br/>
+				<br/>
+			</div>
+			<div>
+				<span>Giới tính:</span>
+				<input type="radio" name="gioitinh" value="Nam"><label id="m1">Nam</label>
+				<input type="radio" name="gioitinh" value="Nữ"><label id="m2">Nữ</label>
+			</div>
+			<br/>
+
+			<br/>
+			<input id="dn" type="submit" name="check" value="Đăng nhập">
+		</form>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+		function day()
+		{
+			var chuoi='';
+			for(var i=1;i<=31;i++){
+				chuoi+="<option>"+i+"</option>";
+			}
+			return "<option>ngày</option>"+chuoi;
+		}
+		document.getElementById('as').innerHTML=day();
+		function thang()
+		{
+			var chuoi='';
+			for(var i=1;i<=12;i++){
+				chuoi+="<option>"+i+"</option>";
+			}
+			return "<option>tháng</option>"+chuoi;
+		}
+		document.getElementById('2').innerHTML=thang();
+		function nam()
+		{
+			var chuoi='';
+			for(var i=1940;i<=2017;i++){
+				chuoi+="<option>"+i+"</option>";
+			}
+			return "<option>năm</option>"+chuoi;
+		}
+		document.getElementById('3').innerHTML=nam();
+		$('#chex').on('submit',function(){
+			var j=true;
+			if($('#ten').val().trim()==''||$('#ten').val().length<5)
+			{
+				$('#ten').next('span').text('Vui lòng nhập đầy đủ');
+				j=false;
+			}
+			else
+			{
+				$('#ten').next('span').text('');
+			}
+			if($('#mail').val().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/)==null)
+			{
+				$('#mail').next('span').text('Vui lòng nhập đầy đủ');
+				j=false;
+			}
+			else
+			{
+				$('#mail').next('span').text('');
+			}
+			if($('#tc').val().trim()==''||$('#tc').val()===$('#ten').val()||$('#ten').val().length<5)
+			{
+				$('#tc').next('span').text('Vui lòng nhập đầy đủ');
+				j=false;
+			}
+			else
+			{
+				$('#tc').next('span').text('');
+			}
+			if($('#mk').val().trim()==''||$('#mk').val()===$('#tc').val()||$('#tc').val().length<5)
+			{
+				$('#mk').next('span').text('Vui lòng nhập đầy đủ');
+				j=false;
+			}
+			else
+			{
+				$('#mk').next('span').text('');
+			}
+						if($('#nmk').val().trim()==''||$('#nmk').val()!==$('#mk').val())
+			{
+				$('#nmk').next('span').text('Vui lòng nhập đầy đủ');
+				j=false;
+			}
+			else
+			{
+				$('#nmk').next('span').text('');
+			}
+			if($('#cc').val().trim()=='')
+			{
+				$('#cc').next('span').text('Vui lòng nhập đầy đủ');
+				j=false;
+			}
+			else
+			{
+				$('#cc').next('span').text('');
+			}
+
+			return j;
+		});
+
+	</script>
+</body>
+</html>

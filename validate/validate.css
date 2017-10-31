@@ -1,0 +1,60 @@
+.m input{
+	width:200px;
+	height: 40px;
+	border:1px solid
+}
+span {
+	width:100px;
+}
+#m1{
+	padding-right: 20px;
+
+}
+
+h1{
+	text-align:center;
+	font-size:50px
+}
+body{
+	margin: 0;
+	padding: 0;
+	background-image:url('1.jpg')
+	}
+.k{
+	width:500px;
+	background-color: white;
+margin: auto;
+box-shadow: 5px 5px 3px 0 gray;
+border-radius:10px;
+
+}
+form{
+	padding-left: 120px;
+	    padding-top: 5px;
+	    padding-bottom: 5px
+	}
+select{
+	width: 65px;
+	height: 30px;
+}
+#dn
+{
+	border: none;
+	width: 200px;
+	height: 40px;
+	background-color: #CDDC39;
+	font-size: 20px;
+	border: 1px solid;
+	color: red;
+}
+.tong{
+	    width: 300px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+span{
+	font-family: Dancing Script;
+	color: red;
+	}

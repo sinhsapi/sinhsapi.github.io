@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="validate.css">
+</head>
+<body>
+	<h1>Đăng kí thành công</h1>
+	<div class="tong">
+		<p>Facebook:<b id="a"></b></p>
+		<p>Gmail: <b id="b"></b></p>
+		<p>Số điện thoại là: <b id="c"></b></p>
+		<p>Địa chỉ là: <b id="d"></b></p>
+		<p>Tài khoản:<b id="e"></b></p>
+		<p>Mật khẩu:<b id="f"></b></p>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+	<script> 
+		var url=new URL(window.location.href)
+		var searchParams = new URLSearchParams(url.search);
+		$('#a').html(searchParams.get('hoten'));
+		$('#b').html(searchParams.get("gmail"));
+		$('#c').html(searchParams.get('std'));
+		$('#d').html(searchParams.get('dc'));
+		$('#e').html(searchParams.get('taikhoan'));
+		$('#f').html(searchParams.get('pass'));
+
+	 </script>
+</body>
+</html>
