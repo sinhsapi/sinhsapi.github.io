@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body>
+    <div class="k">
+        <h1>Đăng kí tài khoản</h1>
+        <form action="form1.html">
+            <div class="m">
+                <input  id="ten" type="text" name="hoten" placeholder="Họ và tên" value=""><br/>
+                <br/>
+                <input id="mail" type="email" name="gmail" placeholder="Gmail" value='';><br/>
+                <br/>
+                <input id="phone" type="number" name="std" placeholder="Số điện thoại" value=""><br/>
+                <br/>
+                <input id="mk" type="text" name="taikhoan" placeholder="Tài khoản " value="" ><br/>
+                <br/>
+                <input id="mk" type="password" name="pass" placeholder="Mật khẩu" value="" ><br/>
+                <br/>
+                <input id="mk" type="password" name="password" placeholder="Nhập lại mật khẩu" value="" ><br/>
+                <br/>
+                <input  id="cc" type="text" name="dc" placeholder="Địa chỉ" value="">
+                <br/>
+                <br/>
+            </div>
+            <div>
+                <select id="as" name="ngay">
+
+                </select>
+                <select id="2" name="thang">
+
+                </select>
+                <select id="3" name="năm">
+
+                </select>
+                <br/>
+                <br/>
+            </div>
+            <div>
+            <p>Giới tính:</p>
+                <input type="radio" name="gioitinh" value="Nam"><label id="m1">Nam</label>
+                <input type="radio" name="gioitinh" value="Nữ"><label id="m2">Nữ</label>
+            </div>
+            <br/>
+
+            <br/>
+            <input id="dn" type="submit" name="check" value="Đăng nhập">
+        </form>
+    </div>
+
+</body>
+<script>
+    function ngay(){
+    var chuoi="";
+    for (var i=1;i<=31;i++)
+    {
+        chuoi+="<option>"+i+"</option>"
+    }
+    return "<option>ngày</option>"+chuoi;
+}
+document.getElementById('as').innerHTML=ngay();
+function thang(){
+    var chuoi="";
+    for (var i=1;i<=12;i++)
+    {
+        chuoi+="<option>"+i+"</option>"
+    }
+    return "<option>tháng</option>"+chuoi;
+}
+document.getElementById('2').innerHTML=thang();
+function nam(){
+    var chuoi="";
+    for (var i=1940;i<=2017;i++)
+    {
+        chuoi+="<option>"+i+"</option>"
+    }
+    return "<option>năm</option>"+chuoi;
+}
+document.getElementById('3').innerHTML=nam();
+
+</script>
+</html>

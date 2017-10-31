@@ -1,0 +1,43 @@
+*{
+
+    box-sizing: border-box;
+}
+body{
+	    margin:0;
+    padding:0;
+    background-color: rgb(122, 75, 168);
+    width: 100%;
+}
+.k{
+    text-align: center;
+    width: 100%;
+}
+.m input{
+	    width: 240px;
+    height: 40px;
+}
+h1{
+	font-size: 56px;
+	text-align: center;
+}
+div select{
+	width:78px;
+	height: 30px;
+	}
+	#dn{
+		width:90px;
+	}
+	#m1{
+		padding-right: 30px;
+	}
+.tong p{
+	font-size: 20px;
+
+}
+.tong{
+	margin: auto;
+	width:35%;
+	padding: 20px;
+	background-color: white;
+	border-radius:5px;
+}
