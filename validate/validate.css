@@ -13,7 +13,8 @@ span {
 
 h1{
 	text-align:center;
-	font-size:50px
+	font-size:50px;
+	color:#0F3B5F;
 }
 body{
 	margin: 0;
@@ -45,7 +46,8 @@ select{
 	background-color: #CDDC39;
 	font-size: 20px;
 	border: 1px solid;
-	color: red;
+	color:   #7D9C9F;
+	margin-bottom:40px;
 }
 .tong{
 	    width: 300px;
@@ -57,4 +59,9 @@ select{
 span{
 	font-family: Dancing Script;
 	color: red;
+	}
+.m p{
+		margin-bottom: 5px;
+		margin-top: 25px;
+		font-weight: bold;
 	}

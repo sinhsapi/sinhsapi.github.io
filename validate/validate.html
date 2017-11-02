@@ -12,28 +12,24 @@
 	<div class="k">
 		<form action="validate1.html" id="chex">
 			<div class="m">		
-					<p>Facebook</p> <input  id="ten" type="text" name="hoten" placeholder="Facebook" value=""><span></span>
+					<p>Facebook</p> <input  id="ten" type="text" name="hoten" placeholder="Nhập từ 5 kí tự trở nên" value=""><span></span>
 
-					<p>Gmail</p><input id="mail" type="email" name="gmail" placeholder="Gmail" value=''><span></span>
-						<p>Số điện thoại</p><input id="e10" type="number" name="std" placeholder="Số điện thoại" value=""><span></span>
-					<br/>
-					<br/>
+					<p>Gmail</p><input id="mail" type="email" name="gmail" placeholder="@gmail.com" value=''><span></span>
+						<p>Số điện thoại</p><input id="e10" type="number" name="std" placeholder="Mời bạn nhập số" value=""><span></span>
 
-					<p>Tài khoản</p><input id="tc" type="text" name="taikhoan" placeholder="Tài khoản " value="" ><span></span><br/>
+					<p>Tài khoản</p><input id="tc" type="text" name="taikhoan" placeholder="Nhập từ 5 kí tự trở nên" value="" ><span></span>
 					<br/>
-					<p>Mật khẩu</p><input id="mk" type="password" name="pass" placeholder="Mật khẩu" value="" >
+					<p>Mật khẩu</p><input id="mk" type="password" name="pass" placeholder="Nhập từ 5 kí tự trở nên" value="" >
 					<span></span>
-					<br/>
-					<br/>
-					<p>Nhập lại mật khẩu</p><input id="nmk" type="password" name="password" placeholder="Nhập lại mật khẩu" value="" ><span></span>
-					<br/>
-					<br/>
+
+					<p>Nhập lại mật khẩu</p><input id="nmk" type="password" name="password" placeholder="Nhập lại mật khẩu vào" value="" ><span></span>
 
 					<p>Địa chỉ</p>
-					<input  id="cc" type="text" name="dc" placeholder="Địa chỉ" value=""><span></span>
-					<br/>
-					<br/>
+					<input  id="cc" type="text" name="dc" placeholder="Nhập địa chỉ của bạn" value=""><span></span>
+
 			</div>
+			<br/>
+			<br/>
 			<div>
 				<select id="as" name="ngay" value="">
 
@@ -48,12 +44,10 @@
 				<br/>
 			</div>
 			<div>
-				<span>Giới tính:</span>
+				<i>Giới tính:</i>
 				<input type="radio" name="gioitinh" value="Nam"><label id="m1">Nam</label>
 				<input type="radio" name="gioitinh" value="Nữ"><label id="m2">Nữ</label>
 			</div>
-			<br/>
-
 			<br/>
 			<input id="dn" type="submit" name="check" value="Đăng nhập">
 		</form>
@@ -109,7 +103,7 @@
 			}
 			if($('#tc').val().trim()==''||$('#tc').val()===$('#ten').val()||$('#ten').val().length<5)
 			{
-				$('#tc').next('span').text('Vui lòng nhập đầy đủ');
+				$('#tc').next('span').text('Vui lòng nhập khác Facebook');
 				j=false;
 			}
 			else
@@ -118,16 +112,16 @@
 			}
 			if($('#mk').val().trim()==''||$('#mk').val()===$('#tc').val()||$('#tc').val().length<5)
 			{
-				$('#mk').next('span').text('Vui lòng nhập đầy đủ');
+				$('#mk').next('span').text('Vui lòng nhập khác tài khoản');
 				j=false;
 			}
 			else
 			{
 				$('#mk').next('span').text('');
 			}
-						if($('#nmk').val().trim()==''||$('#nmk').val()!==$('#mk').val())
+						if($('#nmk').val().trim()==''||$('#nmk').val()!==$('#mk').val()||$('#nmk').val().length<5)
 			{
-				$('#nmk').next('span').text('Vui lòng nhập đầy đủ');
+				$('#nmk').next('span').text('Vui lòng nhập đúng Mật khẩu');
 				j=false;
 			}
 			else
