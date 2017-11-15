@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+	<div id="snow">
+		<div class="a">
+			<h1>Cùng chơi nào...!!!</h1>
+			<button class="start" onclick="start()">start</button>
+		</div>
+		<div class="time" style="display:none;">
+			<div class="progress">
+				<progress max="60" value="60"></progress>
+			</div>
+		</div>
+
+		<div class="cha" style="display:none;">
+
+			<div class="content">
+
+			</div>
+
+		</div>
+		<div class="ketthuc">
+			<div id="lose">
+			<h1>Bạn đã thua cuộc</h1>
+			<h2>Chơi lại nhé...!!!</h2>
+				
+			</div>
+			<div id="win">
+				<h1> Chúc mừng bạn thắng cuộc</h1>
+			</div>
+			<button id="quaylai" onclick="kt()">Chơi lại</button> 
+		</div>
+		<div>
+			<audio id="bg-music">
+    			<source src="bg.mp3" type="audio/mpeg">
+			</audio>
+			<audio id="bai-lose">
+    			<source src="1.mp3" type="audio/mpeg">
+			</audio>
+			<audio id="bai-win">
+    			<source src="ring.mp3" type="audio/mpeg">
+			</audio>
+		</div>
+	</body>
+
+
+
+</div>
+<script src="jquery-3.2.1.min.js"></script>
+<script src="my.js"></script>
+</html>
