@@ -1,0 +1,19 @@
+i.large{
+	font-size:100%;
+}
+.badge{
+	display: none;
+}
+.sorted-list div:hover .badge{
+		display: inline;
+}
+.ui-state-highlight{
+	background-color: #fafafa;
+	height: calc(1.5rem + 20px);
+}
+.card .collecion .collection-item.dragging{
+	transform: rotateY(10deg);
+}
+.sorted-list div{
+	z-index: 1;
+}

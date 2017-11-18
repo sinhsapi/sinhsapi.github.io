@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="materialize/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Rozha+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="cv.css">
+
+</head>
+<body>
+    <style type="text/css" media="screen">
+        h5{
+            font-family: Rozha One;
+        }
+    </style>
+    <header id="header" class="">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo center" >KANBAN BOARD</a>
+                </ul>
+            </div>
+        </nav>
+    </header><!-- /header -->
+    <section class="container">
+        <div class="row">
+            <div class="col m4">
+                <div class="card">
+                    <h5 style="background-color:red ; text-align:center">
+                        TO DO</h5>
+                    <div class="collection sorted-list" id ="todo">
+                        <div href="#!" class="collection-item">Alvin<span  class="badge"><i class="tiny material-icons right">delete</i></span></div>
+                        <div href="#!" class="collection-item active">Alvin<span  class="badge"><i class="large material-icons right">delete</i></span></div>
+                        <div href="#!" class="collection-item">Alvin<span class="badge"><i class="large material-icons right">delete</i></span></div>
+                        <div href="#!" class="collection-item">Alvin<span class="badge"><i class="large material-icons right">delete</i></span></div>
+                    </div>
+                        <div class="action">
+                                <div class="input-field ">
+                                  <input id="new_job_done" type="text" onkeydown="app.newjob(event,'todo',this)">
+                                  <label for="new_job_name">New job</label>
+                            </div>
+                </div>
+
+                    </div>
+            </div>
+                    <div class="col m4">
+                        <div class="card">
+                            <h5 style="background-color:yellow ; text-align:center">DOING</h5>
+                            <div class="collection sorted-list" id="doing">
+                                <div href="#!" class="collection-item">Alvin<span  class="badge"><i class="large material-icons right">delete</i></span></div>
+                                <div href="#!" class="collection-item active">Alvin<span  class="badge"><i class="large material-icons right">delete</i></span></div>
+                                <div href="#!" class="collection-item">Alvin<span  class="badge"><i class="large material-icons right">delete</i></span></div>
+                                <div href="#!" class="collection-item">Alvin<span  class="badge"><i class="large material-icons right">delete</i></span></div>
+                            </div>
+                             <div class="action">
+                                <div class="input-field ">
+                                  <input id="new_job_done" type="text" onkeydown="app.newjob(event,'doing',this)">
+                                  <label for="new_job_name">New job</label>
+                            </div>
+                        </div>
+
+                        </div>
+
+                    </div>
+                        <div class="col m4">
+                            <div class="card">
+                                <h5 style="background-color:blue ; text-align:center">DONE</h5>
+                                <div class="collection sorted-list" id='done'>
+                                    <div href="#!" class="collection-item">Alvin <span class="badge"><i class="tiny material-icons right">delete</i></span></div>
+                                    <div href="#!" class="collection-item active">Alvin<span  class="badge"><i class="large material-icons right">delete</i></span></div>
+                                    <div href="#!" class="collection-item ">Alvin<span  class="badge"><i class="large material-icons right">delete</i></span></div>
+                                    <div href="#!" class="collection-item">Alvin<span  class="badge"><i class="large material-icons right">delete</i></span></div>
+
+                                </div>
+                                 <div class="action">
+                                <div class="input-field ">
+                                  <input id="new_job_done" type="text" onkeydown="app.newjob(event,'done',this)">
+                                  <label for="new_job_name">New job</label>
+                            </div>
+                            </div>
+
+                          </div>
+                      </div>
+
+                  </div>
+    </section>
+
+  
+  <div id="modal-confirm" class="modal">
+    <div class="modal-content">
+          <h4>Confirm Delete</h4>
+      <p>Are you sure to delete this job?</p>
+    </div>
+    <div class="modal-footer">
+         <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Cancle</a>
+        <a href="#!" class="modal-action waves-effect waves-light btn" id="btn-delete" >Agree</a>
+     
+    </div>
+  </div>
+</body>    
+</html>
+<script src="jquery-3.2.1.min.js"></script>
+<script src="jquery-ui/jquery-ui.min.js"></script>
+<script src="materialize/js/materialize.min.js"></script>
+<script src="index.js"></script>
