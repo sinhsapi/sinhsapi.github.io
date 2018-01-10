@@ -1,4 +1,5 @@
 
+
 	var hienthi=document.getElementById('k');
 		var stt1=document.getElementById('op1');
 		var stt2=document.getElementById('op2');
