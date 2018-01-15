@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+   <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Anton|Crimson+Text" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Gudea" rel="stylesheet">
+  <!-- <script src='https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js'></script> -->
+  <link rel="stylesheet" type="text/css" href="../css/style1.css">
+</head>
+<body>
+	<header id="header">
+      <div class="container-fluid" style="padding-left: 0;padding-right: 0">
+        <!-- Second navbar for sign in -->
+   <nav class="navbar navbar-default">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-2">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="../img/logo1.jpg"></a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbar-collapse-2">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i>Trang Chủ</a></li>
+          <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">CLB</a>
+            <ul class="dropdown-menu">
+             <li><a href="">Học Tập</a></li>
+             <li><a href="#">Văn Nghệ</a></li>
+             <li><a href="#">Thể Thao</a></li>
+           </ul>
+         </li>
+         <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-tag"></span>Tôi YP1</a>
+          <ul class="dropdown-menu">
+           <li><a href="">Team 4</a></li>
+           <li><a href="#">Solo</a></li>  
+         </ul>
+       </li>
+       <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Thông Tin</a>
+        <ul class="dropdown-menu">
+         <li><a href="#">Thông Tin Cá Nhân</a></li>
+         <li><a href="#">Thông Tin Bạn Bè </a></li> 
+       </ul>
+     </li>
+
+
+
+
+     <li>
+      <a class="btn btn-default btn-outline btn-circle collapsed"  data-toggle="collapse" href="#nav-collapse2" aria-expanded="false" aria-controls="nav-collapse2">Sign up</a>
+    </li>
+
+
+
+    <li>
+      <a class="btn btn-default btn-outline btn-circle collapsed"  data-toggle="collapse" href="#nav-collapse2" aria-expanded="false" aria-controls="nav-collapse2">Sign in</a>
+    </li>
+  </ul>
+  <div class="collapse nav navbar-nav nav-collapse slide-down" id="nav-collapse2">
+    <form class="navbar-form navbar-right form-inline" role="form">
+      <div class="form-group">
+        <label class="sr-only" for="Email">Email</label>
+        <input type="email" class="form-control" id="Email" placeholder="Email" autofocus required />
+      </div>
+      <div class="form-group">
+        <label class="sr-only" for="Password">Password</label>
+        <input type="password" class="form-control" id="Password" placeholder="Password" required />
+      </div>
+      <button type="submit" class="btn btn-success">Sign in</button>
+    </form>
+  </div>
+</div><!-- /.navbar-collapse -->
+</div><!-- /.container -->
+</nav><!-- /.navbar -->
+
+      </div>
+		
+	</header><!-- /header -->
+
+  <section>
+    <div class="container tp1">
+      <div class="row" style="margin-top:40px;">
+        <div class="col-lg-7 col-md-7" style="background-color: white;margin-bottom:50px">
+          <div class="quiz" style="    margin-bottom: 180px;">
+             <div class="img112">
+                <img src="../img/112.png" class="img-reponsive" width="120px"/>
+              </div>
+            <div class="answer">
+              <p id="hienthi"></p>
+           <div class="logo111 ">
+              <img src="../img/logo111.png" class="img-reponsive" align="right"/>
+            </div>
+            </div>
+            <div class="question">
+              <button type="text" onclick="check(0)"><span id="op1"></span></button>
+              <button type="text" onclick="check(1)"><span id="op2"></span></button>
+              <br/>
+              <button type="text" onclick="check(2)"><span id="op3"></span></button>
+              <button type="text" onclick="check(3)"><span id="op4"></span></button>
+            </div>
+        </div>
+      </div>
+        <div class="col-sm-4 col-md-4" style="background-color: white;margin-left: 30px;position: relative;    padding-bottom: 20px;">
+          <div class="logo-img" style="position: absolute;top:-8px;right: -4px; width: 75px;transform: rotate(30deg);">
+            <img src="../img/today.png"/>
+          </div>
+          <h3 style="background-color: #ebebeb;padding: 5px;">Học sinh thi online</h3>
+          <table style="margin:auto;margin-top: 20px; ">
+            <thead class="top">
+              <tr>
+                <th width="50px">STT</th>
+                <th width="150px">Họ và tên</th>
+                <th width="70px">Lớp</th>
+                <th width="70px">Điểm thi</th>
+              </tr>
+            </thead>
+            <tbody class="bottom">
+              <tr>
+                <td>1</td>
+                <td>nguyen van A</td>
+                <td>lop 11</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Nguyen van B</td>
+                <td>Lop 10</td>
+                <td>9.5</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>nguyen van C</td>
+                <td>Lop 12</td>
+                <td>9</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid quatrinh">
+      <div class="container quatrinh1">
+        <div class="title-quatrinh">
+          QUÁ TRÌNH VIỆC HỌC TẬP TỐT HƠN
+        </div>
+        <div class="left">
+          <div class="title-top" style="position: relative;">
+            <div class="icon1 glyphicon glyphicon-certificate" style="color:#1e89f6;;   box-shadow: 0 0 0 3px #1e89f6;border: 2px solid #fff;
+    border-radius: 12px;position: absolute;top:0;right:-47px">
+              
+            </div>
+            <div class="title" style="color:#1e89f6;font-size:24px;" >
+                Ôn bài cũ 
+            </div>
+            <div class="content">
+              <p>Xem lại bài hôm nay.<br/>
+                TôiYP1.VN sẽ giúp các em đễ dàng hệ thống<br/> 
+                lại các kiến thức ở trường qua các bạn Support.<br/>
+                Nắm chắc kiến thức,tiết kiệm thời gian để<br>
+                giải quyết bài tập ở nhà.
+
+              </p>
+            </div>
+          </div>
+          <div class="title-bottom" style="margin-top: 249px;position: relative;">
+            <div class="icon2 glyphicon glyphicon-certificate" style="color:#3e8632;   box-shadow: 0 0 0 3px #3e8632;border: 2px solid #fff;
+    border-radius: 12px;position: absolute;top:0;right:-47px">
+              
+            </div>
+            <div class="title" style="color:#3e8632;font-size:24px;">
+              Chuẩn bị bài
+            </div>
+            <div class="content">
+              <p>
+                Xem trước bài học ngày mai, việc này giúp<br/>
+                các em tiếp thu nhanh bài giảng thầy cô ở<br/>
+                trường. Chủ động phát biểu và đặt các câu<br/>
+                hỏi cho bài học.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="center">
+          
+        </div>
+        <div class="right" style="position: relative;">
+
+            <div class="icon3 glyphicon glyphicon-certificate" style="color:#ed696a;   box-shadow: 0 0 0 3px #ed696a;border: 2px solid #fff;border-radius: 12px;position: absolute;top:0;left:-57px;z-index: 1">
+              
+            </div>
+            <div class="title" style="color:#ed696a;font-size: 24px">
+              Làm bài tập
+            </div>
+            <div class="content">
+              <p>
+                Giải quyết hết bài tập về nhà. TôiYP1.vn giúp các <br/>
+                em giải quyết tường tận các bài tập về nhà một cách <br/>
+                nhanh chóng. Giúp các em có thời gian học nâng cao<br/>
+                và các môn xã hội khác.
+              </p>
+            </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <footer>
+            <div>
+                  <p style="padding:20px;font-size:15px; text-align:center;">Design Copy&reg; right 2017</p>
+            </div>
+  </footer>
+	<script src="../plugin/jquery-3.2.1.min.js"></script>
+  <script src ="../plugin/bootstrap.min.js"></script>
+	<script src="../plugin/min.js"></script>
+</body>
+</html>

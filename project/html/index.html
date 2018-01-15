@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Document</title>
+	
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Anton|Crimson+Text" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <script src='https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js'></script>
+  <script>
+    new WOW().init();
+  </script>
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+</head>
+<body>
+  <header>
+   <!-- Second navbar for sign in -->
+   <nav class="navbar navbar-default">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-2">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="../img/logo1.jpg"></a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbar-collapse-2">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i>Trang Chủ</a></li>
+          <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">CLB</a>
+            <ul class="dropdown-menu">
+             <li><a href="index2.html">Học Tập</a></li>
+             <li><a href="#">Văn Nghệ</a></li>
+             <li><a href="#">Thể Thao</a></li>
+           </ul>
+         </li>
+         <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-tag"></span>Tôi YP1</a>
+          <ul class="dropdown-menu">
+           <li><a href="index1.html">Team 4</a></li>
+           <li><a href="#">Solo</a></li>	
+         </ul>
+       </li>
+       <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Thông Tin</a>
+        <ul class="dropdown-menu">
+         <li><a href="#">Thông Tin Cá Nhân</a></li>
+         <li><a href="#">Thông Tin Bạn Bè </a></li>	
+       </ul>
+     </li>
+
+
+
+
+     <li>
+      <a class="btn btn-default btn-outline btn-circle collapsed"  data-toggle="collapse" href="#nav-collapse2" aria-expanded="false" aria-controls="nav-collapse2">Sign up</a>
+    </li>
+
+
+
+    <li>
+      <a class="btn btn-default btn-outline btn-circle collapsed"  data-toggle="collapse" href="#nav-collapse2" aria-expanded="false" aria-controls="nav-collapse2">Sign in</a>
+    </li>
+  </ul>
+  <div class="collapse nav navbar-nav nav-collapse slide-down" id="nav-collapse2">
+    <form class="navbar-form navbar-right form-inline" role="form">
+      <div class="form-group">
+        <label class="sr-only" for="Email">Email</label>
+        <input type="email" class="form-control" id="Email" placeholder="Email" autofocus required />
+      </div>
+      <div class="form-group">
+        <label class="sr-only" for="Password">Password</label>
+        <input type="password" class="form-control" id="Password" placeholder="Password" required />
+      </div>
+      <button type="submit" class="btn btn-success">Sign in</button>
+    </form>
+  </div>
+</div><!-- /.navbar-collapse -->
+</div><!-- /.container -->
+</nav><!-- /.navbar -->
+
+
+
+<!-- modal form dan k -->
+</header><!-- header role="banner" -->
+
+<content> 
+  <div class="row">
+   <div class="col-md-4 col-xs 6 sv">
+    <button class="btn btn-default btn-lg nav-tap1" style="padding-right: 30px;" onclick="checkbutton()">THPT</button>
+    <button class="btn btn-default btn-lg nav-tap2">Lớp 10</button>
+    <button class="btn btn-default btn-lg nav-tap2"> Lớp 11</button>
+    <button class="btn btn-default btn-lg nav-tap2">Lớp 12</button>
+  </div>
+
+</div>
+
+
+<!-- carosel  -->
+
+
+
+<div id="carousel" class="carousel slide carousel-fade innertap" data-ride="carousel" data-interval="false">
+  <ol class="carousel-indicators">
+    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel" data-slide-to="1"></li>
+    <li data-target="#carousel" data-slide-to="2"></li>
+    <li data-target="#carousel" data-slide-to="3"></li>
+  </ol>
+  
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <div class="slide-content">
+        <video poster="http://192.241.175.50/videos/london.jpg" webkit-playsinline id="bgvid" loop>
+          <source src="http://192.241.175.50/videos/london.webm" type="video/webm">
+            <source src="http://192.241.175.50/videos/london.mp4" type="video/mp4">
+            </video>
+            <div class="slide-overlay door">
+              <div class='title'>Slide 1</div>
+              <div class="description"> The First Description </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="slide-content">
+            <video poster="http://192.241.175.50/videos/boston.jpg" webkit-playsinline id="bgvid" loop>
+              <source src="http://192.241.175.50/videos/boston.webm" type="video/webm">
+                <source src="http://192.241.175.50/videos/boston.mp4" type="video/mp4">
+                </video>
+                <div class="slide-overlay door">
+                  <div class='title'> Slide 2 </div>
+                  <div class="description"> The Second Description </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="slide-content">
+                <video poster="http://192.241.175.50/videos/split.jpg" webkit-playsinline id="bgvid" loop>
+                  <source src="http://192.241.175.50/videos/split.webm" type="video/webm">
+                    <source src="http://192.241.175.50/videos/split.mp4" type="video/mp4">
+                    </video>
+                    <div class="slide-overlay door">
+                      <div class='title'>Slide 3</div>
+                      <div class="description"> #AnotherOne #AndAnotherOne</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="slide-content">
+                    <video poster="http://192.241.175.50/videos/samo.jpg" webkit-playsinline id="bgvid" loop>
+                      <source src="http://192.241.175.50/videos/samo.webm" type="video/webm">
+                        <source src="http://192.241.175.50/videos/samo.mp4" type="video/mp4">
+                        </video>
+                        <div class="slide-overlay door">
+                          <div class='title'>Slide 4</div>
+                          <div class="description"> #PapaBlessUp </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <a class="carousel-control left" href="#carousel" data-slide="prev">
+                   <span ><i class="glyphicon glyphicon-chevron-left" ></i></span>
+                 </a>
+
+                 <a class="carousel-control right" href="#carousel" data-slide="next">
+                   <span><i class="glyphicon glyphicon-chevron-right" aria-hidden="true"></i></span>
+                 </a>
+
+               </div>
+
+
+
+               <!-- menu phụ -->
+              <div class="supper">
+               <div class="nav-no">
+                <button type="">Sự Kiện</button>
+                <button type="">Tin Tức</button>
+                <button type="">Giới Thiệu</button>
+              </div>
+            </div>
+
+
+              <!-- tap của sự kiện -->
+              <div class="container" >
+                <!-- <hr/ style="color:gray;     margin-bottom: 50px;    border-top: 1px solid gray; width: 300px; margin: auto;     margin-bottom: 50px;"> -->
+                <!-- <h2>Sự Kiện</h2> -->
+                <div class="row">
+                  <div class="col-md-8 col-sm-8 col-lg-8" style="background-color:white;padding-top:15px;margin-top:30px;">
+                    <h2 style="padding-top:0; padding-bottom: 50px;padding-left: 15px;font-family: 'PT Sans', sans-serif;">Sự kiện chính & lịch tổ chức</h2>
+                    <div class="row">
+                      <div class="col-md-4 col-sm-4 col-lg-4">
+                       <a href=""><img src="../img/vannghe.jpg"/></a>
+                     </div>
+                     <div class="col-md-8 col-sm-8 col-lg-8">
+                      <a href=""><h3 >CLB Văn Nghệ chuẩn bị</h3> </a>
+                      <small>Đăng ngày:20/12/2017</small>
+                      <p style="margin-top:15px">
+
+                      Không khí Giáng sinh đã lan tỏa khắp các góc nhỏ tại THPT YP1 rồi! Cùng dạo quanh trường một vòng để cảm nhận không khí đón Noel và chuẩn bị cho đêm party vào tối thứ 6 tuần này</p>
+                    </div>
+                  </div>
+                  <div class="row" style="padding-top:50px">
+                    <div class="col-md-4 col-sm-4 col-lg-4">
+                      <a href=""><img src="../img/bongda.jpeg"/></a>
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-lg-8">
+                      <a href=""><h3>Sôi động cùng giải bóng đá YP1 lần 2 năm 2017</h3></a>
+                      <small>Đăng ngày:5/12/2017</small>
+                      <p style="margin-top:15px">
+                        Tình yêu thể thao của các bạn đâu rồi ạ...!!!<br/>
+                        Hãy cháy hết mình cùng giải bóng đá 2017 trường THPT YP1 nào các bạn ơi...!!!
+
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row" style="padding-top:50px">
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                      <a href=""><img src="../img/lich thi.jpg"/></a>
+                    </div>
+                    <div class="col-sm-8 col-md-8 col-lg-8">
+                      <a href=""><h3>Lịch thi mỗi ngày</h3></a>
+                      <small>Đăng ngày:<span style="color:red;">cập nhật mỗi ngày </span></small>
+                      <p style="margin-top:15px">Các bạn vào xem lịch thi rồi ôn lại bài.Đến giờ các bạn vào thi nhé.<br/>
+                        Chúc các bạn thi tốt...!!!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-lg-3" style="margin-left:40px;
+                margin-top: 30px;    padding-bottom: 25px;">
+                <div class="row" style="background-color: white;padding-bottom: 20px;">
+                  <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div>
+                      <div class="title" style="background-color: blue;background-color: #ebebeb">
+                        <h4 style="padding:10px">
+                        Sự Kiện</h4>
+                      </div>
+                      <div>
+                        <a href=""><img src="../img/sv.jpg"/></a>
+                      </div>
+                      <div>
+                        <p style="padding-top:10px">Ngày diễn ra:2017/11/10</p>
+                        <p>Thời gian:8 a.m-10 a.m</p>
+                      </div>
+                      <div class="sk-chinh">
+                        <a href="">xem chi tiết >></a>
+                      </div>
+                    </div>
+                  </div>  
+                </div>
+
+
+
+
+
+                <div class="row" style="background-color: white; margin-top:50px; padding-bottom: 20px;">
+                  <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div>
+                      <div class="title" style="background-color: blue;background-color: #ebebeb">
+                        <h4 style="padding:10px">
+                        Sự Kiện</h4>
+                      </div>
+                      <div>
+                        <a href=""><img src="../img/toanhoc.jpg"/></a>
+                      </div>
+                      <div>
+                        <li style="padding-top:10px; list-style-type:disc;font-size:14px">Ngày bắt đầu:2017/11/10</li>
+                        <li style="padding-top:10px;padding-bottom:10px; list-style-type:disc;font-size:14px; ">Ngày kết thúc:2017/11/10</li>
+                        <p>Thời gian:8 a.m-10 a.m</p>
+                      </div>
+                      <div class="sk-chinh">
+                        <a href="">xem chi tiết >></a>
+                      </div>
+                    </div>
+                  </div>  
+                </div>
+              </div>
+
+            </div>
+
+
+              <div class="row" >
+                <div class="col-lg-3 col-sm-3 col-md-3" style="background-color: white;margin-top: 50px;">
+                  <h3 style="background-color: #ebebeb;padding: 5px;"><i class="fa fa-bullhorn" aria-hidden="true"></i>Tin tức</h3>
+                  <div style="margin-top:20px">
+                    <a  align="left";  href=""><img width="100px"; src="../img/sk1.jpg"/></a>
+                    <a style="    width: 140px;float: right;padding-top: 10px;" href="">Christmas Party and Happy New Year 2018</a>
+                  </div>
+                  <div style="margin-top:10px;">
+                      <a  align="left";  href=""><img width="100px"; src="../img/lien.jpg"/></a>
+                    <a style="    width: 140px;float: right;padding-top: 10px;" href="">Chung tay ủng hộ đồng bào miềnCTrung qua cơn hoạn</a>
+                  </div>
+                  <div style="margin-top:10px;">
+                            <a  align="left";  href=""><img width="100px"; src="../img/yp1.jpg"/></a>
+                    <a style="    width: 140px;float: right;padding-top: 10px;" href="">Giới thiệu về Trường YP1</a>
+                  </div>
+                  <div style="float:right;padding-top:10px;padding-bottom:10px">
+                    <a href="">Xem thêm >></a>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-6" style="margin-top:50px">
+                  <div class="video"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/AWdA7hdP4ZA?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe></div>
+                </div>
+                <div class="col-lg-3 col-sm-3 col-md-3" style="background-color: white;margin-top: 50px;">
+                  <h3 style="background-color: #ebebeb;padding: 5px;"><i class="fa fa-university" aria-hidden="true"></i>Vinh Danh</h3>
+                  <div style="margin-top:20px;padding-bottom: 20px;">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th width="50px"></th>
+                          <th width="150px" style="font-size: 17px;">Họ tên</th>
+                          <th width="50px" style="font-size: 17px; ">Điểm</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+
+                        <tr>
+                          <td><img src="../img/gold.png"/></td>
+                          <td ><a href="">Nguyễn văn A</a></td>
+                          <td><a href="">388</a></td>
+                        </tr>
+                        <tr>
+                          <td><img src="../img/sliver.png"/></td>
+                          <td><a href="">Nguyễn văn B</a></td>
+                          <td><a href="">380</a></td>
+                        </tr>
+                         <tr>
+                          <td><img src="../img/bronze.png"/></td>
+                          <td><a href="">Nguyễn văn C</a></td>
+                          <td><a href="">378</a></td>
+                        </tr>
+                         <tr>
+                          <td></td>
+                          <td><a href="">Nguyễn văn D</a></td>
+                          <td><a href="">375</a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item" style="background-color: #355C7D;margin-top:20px;padding-top:20px">
+        <div  class="container">
+          <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-6">
+             <p style="font-size:28px;color:white; font-family: 'Open Sans', sans-serif"> BAN CỐ VẤN </p>
+             <div class="row" style="padding-top:10px">
+              <div class="col-md-12">
+                <div class="img-responsive col-md-4 img1"><img src="../img/img1.jpg"></div>
+                <div class="col-md-8 img11">
+                  <p style="font-size:18px; padding-bottom:10px;color:#fcf9c6">Trần văn Hoá</p>
+                  <p style="color:#f2b6f9">Ban chuyên Hóa Học</p>
+                  <p style="color:white;">Với kinh nghiệm giảng dạy trên 30 năm cùng say mê với nghề và tận tụy với người học nên thầy được rất nhiều thế hệ học sinh yêu mến. Phương châm và phong cách giảng dạy của thầy là luôn dành cho học sinh những sản phẩm giáo dục tốt nhất...</p>
+                  <a href="">Xem chi tiết>></a>
+                </div>
+
+              </div>
+
+
+
+            </div>
+            <div class="row" style="padding-top:20px;">
+              <div class="col-md-4 item1"><img src="../img/1.1.jpg"/></div>
+              <div class="col-md-8 img11">
+                <p  id="name" style="font-size:18px; padding-bottom:10px;color:#fcf9c6">Nguyễn thị Lí</p>
+                <p style="color:#f2b6f9;">Ban chuyên Vật Lí</p>
+                <p id="ic">Với kinh nghiệm nhiều năm giảng dạy, cô được đánh giá khá cao trong công tác giảng dạy cũng như tác phong công việc. Những bài giảng của cô luôn được đầu tư và đảm bảo cho việc các em hiểu bài, giải được các bài tập từ căn bản đến nâng cao...</p>
+                <a href="">Xem chi tiết>></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-6 col-lg-6">
+           <p style="font-size:28px;color:white;font-family: 'Open Sans', sans-serif "> ĐỘI NGŨ SUPPORT</p>
+           <div class="row">
+            <div class="col-md-4 item1"><img src="../img/gv1.jpg"/></div>
+            <div class="col-md-8 img11">
+              <p style="font-size:18px; padding-bottom:10px;color:#fcf9c6;padding-top:20px">Nguyễn thị C</p>
+              <p id="ic">Bạn này đang là sinh viên trường đại học Ngoại Thương năm nhất...Bạn ấy thi vào đại học được 29.5 điểm.Bạn ấy muốn giúp đỡ các bạn về phần học tập để đạt kết quả tốt trong kì thi Đại Học...</p>
+              <a href="">Xem chi tiết>></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 item1"><img src="../img/gv2.jpg"/></div>
+            <div class="col-md-8 img11">
+              <p style="font-size:18px; padding-bottom:10px;color:#fcf9c6;padding-top:20px">Nguyễn thị D</p>
+              <p id="ic">Bạn này đang là sinh viên trường đại học Bách Khoa năm nhất...Bạn ấy thi vào đại học được 28.5 điểm.Bạn ấy muốn giúp đỡ các bạn về phần học tập để đạt kết quả tốt trong kì thi Đại Học...</p>
+              <a href="">Xem chi tiết>></a>
+            </div>
+          </div>
+        </div>
+      </div>
+          <div class="b-item">
+      <a href="">BAN GIẢI ĐÁP</a>
+    </div>
+    </div>
+
+  </div>
+</div>
+
+        </content>
+        <footer>
+            <div>
+                  <p style="padding:20px;font-size:15px; text-align:center;">Design Copy&reg; right 2017</p>
+            </div>
+        </footer>
+        <script src="../plugin/jquery-3.2.1.min.js"></script>
+        <script src ="../plugin/bootstrap.min.js"></script>
+        <!-- <script src="../plugin/materialize.min.js" ></script> -->
+        <script>
+               $(document).on('scroll',function(){
+              var a=$('.nav-no');
+              var offset = a[0].getBoundingClientRect();
+              if(offset.top<=0)
+              {
+                  $('.nav-no').addClass('nav-no1');
+              }
+              });
+               $(document).on('scroll',function(){
+               var b=$('.innertap');
+               var set = b[0].getBoundingClientRect();
+               if(set.top>=-400)
+               {
+                   $('.nav-no').removeClass('nav-no1');
+               }
+              });
+
+
+
+
+
+//                // If not iPhone, play first video and setup event handlers for  carousel rotations
+// // iPhone will not play videos inline, and will take control of the browser
+// (!/iPhone/i.test(navigator.userAgent)) {
+//      $('.active > div > video').get(0).play();
+
+//     document.getElementById('carousel').bind('slide.bs.carousel', function(e) {
+//       $(e.relatedTarget).find('video').get(0).play();
+//     });
+
+//     document.getElementById('carousel').bind('slid.bs.carousel', function(e) {
+//       $('video').not('.active > div > video').each(function() {
+//         $(this).get(0).pause();
+//       });
+//     });
+//   }
+
+        </script>
+
+      </body>
+      </html>

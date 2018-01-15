@@ -146,3 +146,102 @@ function bai8(b)
   }
 return b;
 }
+
+
+
+
+function kiemtra(a)
+{
+  var b=a.toString();
+  var c=b.length;
+  if(c%2==0)
+    {
+      var tong1=0;
+      var tong2=0;
+      for(var i=0;i<=c/2-1;i++)
+        {
+          tong1=tong1++(c[i]);
+        }
+      console.log(tong1);
+      for(var j=c-1;j>=c/2;j--)
+        {
+          tong2=tong2++(c[j]);
+        }
+       console.log(tong2);
+      if(tong2==tong1)
+        {
+          return true;
+        }
+      else
+        {
+          return false;
+        }
+    }
+  else
+    {
+      return "so khong la so may man ";
+    }
+}
+
+function bai2(b)
+{
+  var newstr="";
+  var m= b[0].toUpperCase();
+  var c='';
+  for(var i=1;i<b.length;i++)
+    {
+      c=c+b[i].toLowerCase();
+    }
+  var k=m+c;
+  for(var j=0;j<k.length;j++)
+    {
+      if(k[j]!=',')
+        {
+          newstr+=k[j];
+        }
+    }
+  newstr+='.'
+  console.log(newstr);
+}
+function kiemtramang(a)
+{
+  var b=[];
+  var max=a[0].length;
+  var max1=a[0].length;
+  for(var i=0;i<a.length;i++)
+    {
+      if(a[i].length>max)
+        {
+          max=a[i].length;
+          b.push(a[i]);
+          a.splice(a[i]);
+        }
+    }
+  for(i=0;i<a.length;i++)
+    {
+      if(max1>a[i].length)
+        {
+          b.push(a[i]);
+        }
+    }
+  return b;
+}
+
+function bai4(weight1,weight2,weight3,value1,value2)
+{
+  if((weight1+weight2)>weight3)
+    {
+      var max=value1;
+      if(max<value2)
+        {
+          max=value2;
+         
+        }
+      console.log(max);
+    }
+  else
+    {
+      var tong=value1+value2;
+      console.log(tong);
+    }
+}
