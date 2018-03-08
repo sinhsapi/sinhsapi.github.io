@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Tic Tac Toe</h1>
+        <div class="tictac">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </div>
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <script>
+        $(function(){
+            var luot=0;
+            var box=$('.box');
+            function check()
+            {
+                //kiem tra hang.
+                for(var i=0;i<3;i++)
+                {
+                    if(box[0+i*3].innerText==box[0+i*3+1].innerText && box[0+i*3].innerText==box[0+i*3+2].innerText && box[0+3*i].innerText!='')
+                    {
+                        alert("bạn"+box[0+3*i].innerText+" đã thắng cuộc");
+                    }
+                }
+                // kiem tra theo cot
+                for(var i=0;i<3;i++)
+                {
+                    if(box[i].innerText==box[i+3].innerText && box[i].innerText==box[i+6].innerText && box[i].innerText!= '')
+                    {
+                        alert("bạn "+box[i].innerText+" đã thắng cuộc");
+                    }
+                }
+                // kiemtra duong cheo 
+                if(box[0].innerText==box[4].innerText && box[0].innerText==box[8].innerText  && box[0].innerText!='')
+                {
+                    alert("bạn "+box[0].innerText+" đã thắng cuộc");
+                }
+                if(box[2].innerText==box[4].innerText && box[2].innerText==box[6].innerText && box[2].innerText!='')
+                {
+                    alert("bạn "+box[2].innerText+" đã thắng cuộc");
+                }
+            }
+            $('.box').each(function(){
+               var box=$(this);
+                box.on('click',function(){
+                    if(luot%2==0 && box.text().length ==0)
+                    {
+                        box.text('o').css('color','red');
+                        luot++;
+                    }
+                    else if(box.text().length ==0)
+                    {
+                        box.text("x").css('color','blue');
+                        luot++;
+                    }
+                    console.log(luot);
+                    if(luot==9)
+                    {
+                        alert("hoà");
+                    }
+                    check();
+                });
+            });
+        });
+    </script>
+</body>
+</html>

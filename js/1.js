@@ -245,3 +245,75 @@ function bai4(weight1,weight2,weight3,value1,value2)
       console.log(tong);
     }
 }
+
+
+
+
+var cauthu=[{
+name: "Bui Tien Dung",
+position: "goalkeeper",
+birth_year: 1997,
+height: "1m81",
+club: "FLC Thanh Hoa",
+},
+{
+name: "Bui Tien Dung",
+position: "defender",
+birth_year: 1995,
+height: "1m76",
+club: "Viettel",
+},
+{
+name: "Nguyen Cong Phuong",
+position: "striker",
+birth_year: 1996,
+height: "1m68",
+club: "HAGL",
+},
+];
+function countAllPlayers(a){
+  return a.length;
+}
+function heckNumberOfPlayers(a){
+  var m=true;
+  if(a.length<16)
+  {
+    m=false;
+  }
+  return m;
+}
+function getPlayersByBirthYear(year)
+{
+  var b=[];
+  for(var i=0;i<cauthu.length;i++)
+    {
+      if(cauthu[i].birth_year==year)
+        {
+          b.push(cauthu[i]);
+        }
+    }
+  return b;
+}
+function getPlayersByClub(club)
+{
+  var b=[];
+  for(var i=0;i<cauthu.length;i++)
+    {
+      if(cauthu[i].club===club)
+        {
+          b.push(cauthu[i]);
+        }
+    }
+  return b;
+}
+function getTallerPlayers(height){
+   var b=[];
+  for(var i=0;i<cauthu.length;i++)
+    {
+      if(cauthu[i].height>=height)
+        {
+          b.push(cauthu[i]);
+        }
+    }
+  return b;
+}

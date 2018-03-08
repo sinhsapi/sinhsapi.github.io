@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<h1>Sản phẩm kệ tivi</h1>
+
+<img src="https://lh3.googleusercontent.com/-_aCWEk0NjKk/U8eEp8KAcBI/AAAAAAAAFYM/hXyyq_Uf_I4/s1024-Ic42/ke-tivi-155.jpg"/>
+</br>
+<a href="#">Đặt hàng</a>
+</br>
+<p><b>Kệ tivi 1<b/></p>
+<p ><strong>Giá tiền:</strong>15 triệu<b>VND</b></p>
+<H4>Chi tiết về sản phẩm:</H4>
+<p><B>ĐẶC ĐIỂM:</B></p>
+</br>
+<p>kệ tivi1 làm từ chất gỗ hương.</br>Bộ này được khắc rất đẹp nhìn tổng thể thì bộ này rất chắc chắn và đẹp.</br>
+Đang được nhiều hộ gia đình đặt mua.</p>
+</br>
+<img src="http://noithatchungcu.org/wp-content/uploads/2016/12/ke-tivi-go-xoan-dao-1.jpg"/>
+<a href="#">Đặt hàng</a>
+<p><b>Kệ tivi 2</b><p>
+<p><b>Giá tiền:</b></p>12 triệu <b>VND</b>
+<H4>Chi tiết về sản phẩm:</H4>
+<p><B>ĐẶC ĐIỂM:</B></p>
+</br>
+<p>Kệ tivi 2 là bộ cũng được làm từ gỗ hương.</br>Bộ bàn ghé này đang có rất nhiều ngừoi dùng trên thị trường.</p>
+<p><b>chức năng:</b></p>
+<p>Dùng trang trí phòng khách đẻ kê tivi</p>
+	
+</body>
+</html>
